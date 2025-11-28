@@ -1,0 +1,19 @@
+
+
+Cada entrada del ranking:
+
+const xp = entry.xp ?? Math.floor(kms * 10);
+
+
+XP se visualiza con:
+
+✔ una barra de progreso
+✔ color especial "text-xpGold"
+✔ valor numérico
+
+Ejemplo:
+
+<div className="xp-bar" style={{ width: `${Math.min((xp / 1000) * 100, 100)}%` }}></div>
+
+
+Esto permite a los usuarios competir entre sí de forma visual y motivante.
