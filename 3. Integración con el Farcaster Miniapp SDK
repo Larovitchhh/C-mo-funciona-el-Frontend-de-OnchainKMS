@@ -1,0 +1,31 @@
+
+
+El frontend inicializa el SDK así:
+
+await sdk.ready();
+await sdk.actions.ready();
+
+
+Usa funciones especiales:
+
+Wallet
+await sdk.wallet.requestAddress()
+
+User
+const fid = await sdk.user.getFid();
+
+UI
+
+Evita splash screen atorado
+
+Enlaza URLs con sdk.actions.openUrl dentro de miniapp
+
+El SDK es crítico para:
+
+Obtener FID del usuario
+
+Conectar wallet
+
+Validar el entorno Farcaster
+
+Permitir navegación segura
