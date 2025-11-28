@@ -1,0 +1,22 @@
+. Conexión a la API del Backend
+
+El frontend habla con estos endpoints:
+
+Endpoint	Descripción
+/api/ranking	Ranking local para la miniapp
+/ranking	Ranking del Club Strava (web completa)
+/auth/strava/login	Login OAuth web
+/exchange_token	Login OAuth miniapp
+/api/strava/status/:fid	Estado Strava para un usuario
+/mint-activity	Realiza el mint
+
+La carga inicial en ranking:
+
+fetch("/api/ranking")
+  .then(res => res.json())
+  .then(setRanking)
+
+
+El mint se envía vía:
+
+fetch("/mint-activity", { method: "POST", body: JSON.stringify(payload) })
