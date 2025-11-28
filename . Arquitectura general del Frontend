@@ -1,0 +1,31 @@
+rquitectura general del Frontend
+
+El frontend está construido con:
+
+React + Vite / React Scripts
+
+Componentes modulares
+
+Estado local (useState, useEffect)
+
+Integración con Farcaster SDK
+
+Consumo de API Backend Express
+
+Estilos con Tailwind + clases personalizadas (NewThemeWrapper)
+
+El frontend se divide internamente en:
+
+Pantalla Home / Ranking
+
+Pantalla Perfil (Profile)
+
+Modales y acciones
+
+Conexión con Strava
+
+Conexión con Farcaster
+
+Minting de actividades
+
+Está pensado para funcionar en /miniapp/index.html y /miniapp/profile.html dentro del ecosistema Farcaster.
