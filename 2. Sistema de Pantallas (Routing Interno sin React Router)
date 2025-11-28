@@ -1,0 +1,34 @@
+
+
+La aplicación principal no usa React Router en la miniapp, sino que controla la navegación con estado:
+
+const [screen, setScreen] = useState("ranking");
+
+
+Dos pantallas principales:
+
+🏆 Ranking
+
+Carga desde /api/ranking
+
+Muestra usuarios, kilómetros y XP
+
+Botón para mint
+
+Enlace al club Strava
+
+👤 Perfil
+
+Obtiene FID del SDK de Farcaster
+
+Permite conectar Strava
+
+Muestra estado de conexión
+
+Acceso al Mint dentro de la app completa
+
+Este sistema garantiza:
+
+✔ velocidad ultra rápida
+✔ compatibilidad con Farcaster (evita rutas complejas)
+✔ no rompe restricciones del miniapp sandbox
