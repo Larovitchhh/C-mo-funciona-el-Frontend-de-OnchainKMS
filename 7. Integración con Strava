@@ -1,0 +1,34 @@
+
+
+Hay dos modos de login:
+
+A) Web completa
+
+Usa /auth/strava/login
+
+B) Miniapp Farcaster
+
+Usa:
+
+https://www.strava.com/oauth/authorize?client_id=182742&redirect_uri=https://onchainkms.baseminiapps.com/exchange_token&response_type=code&scope=activity:read_all
+
+
+El frontend detecta:
+
+si el usuario está conectado
+
+si tiene Strava vinculado
+
+si puede mintear actividad
+
+Tras conectar Strava, el backend guarda:
+
+access_token por usuario
+
+refresh_token
+
+athlete_id
+
+username
+
+Y el frontend refleja el estado.
